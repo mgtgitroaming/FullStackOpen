@@ -4,6 +4,7 @@ const Button = ({handleClick, text}) => [
   <button onClick={handleClick}>{text}</button>
 ]
 
+
 const StatisticLine = (props) => {
   if(props.text.toLowerCase() === 'good')
   {
@@ -31,10 +32,12 @@ const Statistics = ({good, neutral, bad, total}) => {
   const average = total > 0  ? (good - bad) / total : 0;
   const positive = total > 0  ? (good / total) * 100 : 0;
 
+  console.log('')
+  
+
   if(total > 0)
   {
     return (
-      <>
       <div>
       <table>
         <tbody>
@@ -65,7 +68,6 @@ const Statistics = ({good, neutral, bad, total}) => {
         </tbody>
       </table>
       </div>
-        </>
     )
   }
   else {
