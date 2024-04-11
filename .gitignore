@@ -1,15 +1,15 @@
 ### react ###
 .DS_*
-*.log
-logs
+/**/*.log
+/**/logs
 **/*.backup.*
 **/*.back.*
 
-node_modules
-bower_components
+/**/node_modules
+/**/bower_components
 
-*.sublime*
+/**/*.sublime*
 
-psd
-thumb
-sketch
+/**/psd
+/**/thumb
+/**/sketch

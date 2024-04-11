@@ -1,6 +1,11 @@
-const Part = (part) => {
-    console.log(part)
-    return <p>{part}</p> 
-  }
+const Part = ({ part, exercise }) => {
+  return (
+    <>
+    <li>
+      {part} {exercise}
+      </li>
+    </>
+  )
+}
 
-  export default Part;
+export default Part;
